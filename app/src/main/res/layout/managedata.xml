@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!--<Button android:id="@+id/exportdbtosdbutton"
+                android:layout_width="200dp" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+                android:text="Export DB to SD card" />
+
+        <Button android:id="@+id/importdbfromsdbutton"
+                android:layout_width="200dp" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+                android:text="Import DB from SD card" />-->
+                
+        <Button android:id="@+id/cleardbutton"
+        android:layout_width="200dp" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+        android:text="Delete all data from DB" />
+        
+        <Spinner
+            android:id="@+id/sVersionTwo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+            android:prompt="@string/version_prompt"
+        />
+        
+        <Button android:id="@+id/uploadbutton"
+        android:layout_width="200dp" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+        android:text="Cache selected version" />
+        
+        <Button android:id="@+id/clearbiblebutton"
+        android:layout_width="200dp" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+        android:text="Clear cached versions" />
+
+        <!--<Button android:id="@+id/versestocsvbutton"
+        android:layout_width="200dp" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+        android:text="MyVerses to CSV" />-->
+        
+        <Button android:id="@+id/clearscoresbutton"
+        android:layout_width="200dp" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+        android:text="Reset MyVerses scores" />
+
+        <!--<Button android:id="@+id/showstats"
+        android:layout_width="200dp" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" android:layout_gravity="center_horizontal"
+        android:text="Display statistics" />-->
+
+</LinearLayout>
+

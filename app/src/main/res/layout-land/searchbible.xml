@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/searchbutton"
+            android:layout_width="80dp" android:layout_height="72dp"
+            android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+            android:text="Search" />
+        <Spinner
+            android:id="@+id/sVersionTwo"
+            android:layout_width="120dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+            android:prompt="@string/version_prompt"
+            />
+        <Spinner
+            android:id="@+id/sSearch"
+            android:layout_width="120dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp" android:layout_gravity="center_horizontal"
+            android:prompt="@string/param_prompt"
+            />
+        <CheckBox android:id="@+id/chText"
+            android:layout_width="80dp"
+            android:layout_height="72dp"
+            android:text="Text"/>
+        <EditText
+            android:id="@+id/editText"
+            android:textSize="8pt"
+            android:layout_width="fill_parent"
+            android:layout_height="72dp"/>
+
+    </LinearLayout>
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/querylist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+
+</LinearLayout>

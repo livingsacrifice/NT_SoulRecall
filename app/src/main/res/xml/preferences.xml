@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="UI Functionality"
+        android:key="first_category">     
+        <CheckBoxPreference
+            android:key="show_edittext"
+            android:summary="Enable or disable user text entry and scoring."
+            android:title="Show Edit Box"
+            android:defaultValue="false"
+        />
+        <CheckBoxPreference
+            android:key="reverseMode"
+            android:summary="Check to show verse text before reference."
+            android:title="Reverse Mode"
+            android:defaultValue="true"
+        />
+        <!--<ListPreference
+            android:key="updates_interval"
+            android:title="Updates interval"
+            android:summary="Define how often updates will be performed"
+            android:defaultValue="1000"
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues"
+        />-->
+        <org.me.ntmemtest.SeekBarPreference
+                android:key="hint_length"
+                android:defaultValue="5"
+                android:title="Hint Length (words)" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Color Preferences"
+        android:key="second_category">
+        <!--<EditTextPreference
+            android:key="welcome_message"
+            android:title="Welcome Message"
+            android:summary="Define the Welcome message to be shown"
+            android:dialogTitle="Welcome Message"
+            android:dialogMessage="Provide a message"
+            android:defaultValue="Default welcome message" />-->
+        <org.me.ntmemtest.ColorPickerPreference
+        android:key="color1"
+        android:title="Text Color"
+        android:summary=""
+        android:defaultValue="@integer/COLOR_WHITE"
+        />
+        <org.me.ntmemtest.ColorPickerPreference
+        android:key="color2"
+        android:title="Background Color"
+        android:summary=""
+        android:defaultValue="@integer/COLOR_BLACK"
+        alphaSlider="true"
+        />
+        <CheckBoxPreference
+            android:key="darkMode"
+            android:summary="Check to force black background."
+            android:title="Dark Mode (OLED)"
+            android:defaultValue="false"
+        />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Extras"
+        android:key="third_category">
+        <CheckBoxPreference
+            android:key="add_OT"
+            android:summary="Check to include Old Testament for looking up verses."
+            android:title="Add Old Testament"
+            android:defaultValue="false"
+        />
+        <CheckBoxPreference
+            android:key="volControl"
+            android:summary="Check to allow verse navigation with volume buttons."
+            android:title="Volume Buttons Control"
+            android:defaultValue="false"
+        />
+        <CheckBoxPreference
+            android:key="add_sig"
+            android:summary="Check to include app signature in sharing verses."
+            android:title="Include Signature"
+            android:defaultValue="true"
+        />
+        <CheckBoxPreference
+            android:key="screen_on"
+            android:summary="Check to stop screen timeout."
+            android:title="Screen On Persistence"
+            android:defaultValue="false"
+        />
+    </PreferenceCategory>
+</PreferenceScreen>
+
+

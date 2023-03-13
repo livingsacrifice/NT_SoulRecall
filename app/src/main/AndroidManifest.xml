@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="27"
+    android:versionName="1.27">
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NTSoulRecall"
+        tools:targetApi="31">
+        <activity android:name=".NT_MemTest" android:label="NT Soul Recall"
+         android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowSettingsActivity"
+        android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".ManageDB"
+        android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".SearchBible"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+    </application>
+
+</manifest>
